@@ -17,38 +17,41 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/Owl/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/Owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css">
+
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <!-- NAVBAR -->
-    <header>
-        <nav class="navbar-top navbar navbar-expand-md navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.html"><span class="red">A</span>IV.<span class="red">T</span>.<span
-                        class="red">S</span>HARK</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar-top navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span class="red">A</span>IV.<span class="red">T</span>.<span
+                    class="red">S</span>HARK</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
     <!--// END NAVBAR -->
 
     <!-- HOME -->
@@ -140,7 +143,7 @@
         <!-- HOME HEADING SECTION -->
         <section id="home-heading-section" class="heading-section">
             <div class="section-wrapper">
-                <div class="section-inner py-4 text-center">
+                <div class="section-inner dark-overlay-06 py-4 text-center white">
                     <div class="container">
                         <h1>Are You Ready To Get Started?</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita voluptates, consequatur
@@ -180,7 +183,9 @@
             <div class="section-inner dark-overlay-06 py-5 text-center white">
                 <div class="container">
                     <div class="video-play-icon mb-3">
-                        <i class="fas fa-3x fa-play"></i>
+                        <a data-fancybox="video" href="https://www.youtube.com/watch?v=o-fWMydqIHE">
+                            <i class="fas fa-3x fa-play white"></i>
+                        </a>
                     </div>
                     <div class="video-play-desc">
                         <h1>See What We Do?</h1>
@@ -203,35 +208,42 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-6 col-md-4">
+                        <div class="col-12 col-md-4">
                             <div class="photo-item">
-                                <img src="./img/photo1.jpeg" alt="photo1" class="img-fluid">
+                                <a data-fancybox="gallery" href="./img/photo1.jpeg">
+                                    <img src="./img/photo1.jpeg" alt="photo1" class="img-fluid">
+                                </a>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4">
+                        <div class="col-12 col-md-4">
                             <div class="photo-item">
-                                <img src="./img/photo2.jpeg" alt="photo2" class="img-fluid">
-                            </div>
+                                <a data-fancybox="gallery" href="./img/photo2.jpeg">
+                                    <img src="./img/photo2.jpeg" alt="photo1" class="img-fluid">
+                                </a> </div>
                         </div>
-                        <div class="col-6 col-md-4">
+                        <div class="col-12 col-md-4">
                             <div class="photo-item">
-                                <img src="./img/photo3.jpeg" alt="photo3" class="img-fluid">
-                            </div>
+                                <a data-fancybox="gallery" href="./img/photo3.jpeg">
+                                    <img src="./img/photo3.jpeg" alt="photo1" class="img-fluid">
+                                </a> </div>
                         </div>
-                        <div class="col-6 col-md-4">
+                        <div class="col-12 col-md-4">
                             <div class="photo-item">
-                                <img src="./img/photo4.jpeg" alt="photo4" class="img-fluid">
-                            </div>
+                                <a data-fancybox="gallery" href="./img/photo4.jpeg">
+                                    <img src="./img/photo4.jpeg" alt="photo1" class="img-fluid">
+                                </a> </div>
                         </div>
-                        <div class="col-6 col-md-4">
+                        <div class="col-12 col-md-4">
                             <div class="photo-item">
-                                <img src="./img/photo5.jpeg" alt="photo5" class="img-fluid">
-                            </div>
+                                <a data-fancybox="gallery" href="./img/photo5.jpeg">
+                                    <img src="./img/photo5.jpeg" alt="photo1" class="img-fluid">
+                                </a> </div>
                         </div>
-                        <div class="col-6 col-md-4">
+                        <div class="col-12 col-md-4">
                             <div class="photo-item">
-                                <img src="./img/photo6.jpeg" alt="photo6" class="img-fluid">
-                            </div>
+                                <a data-fancybox="gallery" href="./img/photo6.jpeg">
+                                    <img src="./img/photo6.jpeg" alt="photo1" class="img-fluid">
+                                </a> </div>
                         </div>
                     </div>
                 </div>
@@ -266,17 +278,17 @@
     <!-- FOOTER -->
     <footer>
         <div class="footer-wrapper bg-black">
-            <div class="footer-inner white">
+            <div class="footer-inner white py-4">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 py-4">
-                                &copy; 2018 TShark. All rights reserved
+                        <div class="col-md-6">
+                            &copy; 2018 TShark. All rights reserved
                         </div>
-                        <div class="col-md-6 py-4">
-                            <nav class="nav justify-content-end">
-                              <a class="nav-link small white" href="#">Help</a>
-                              <a class="nav-link small white" href="#">FAQs</a>
-                              <a class="nav-link small white" href="#">Terms</a>
+                        <div class="col-md-6">
+                            <nav class="nav nav-footer">
+                                <a class="nav-link small white" href="#">Help</a>
+                                <a class="nav-link small white" href="#">FAQs</a>
+                                <a class="nav-link small white" href="#">Terms</a>
                             </nav>
                         </div>
                     </div>
@@ -284,11 +296,13 @@
             </div>
         </div>
     </footer>
+
     <!-- script -->
     <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
 
     <script src="./js/main.js"></script>
 </body>

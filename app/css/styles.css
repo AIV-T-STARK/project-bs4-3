@@ -43,6 +43,7 @@ body {
   padding-left: 1rem !important;
   padding-right: 1rem !important; }
 
+/* ===== index.html ======= */
 /* ----------------------HOME------------------------ */
 /* HOME SHOWCASE SLIDER */
 #home-carousel {
@@ -73,14 +74,14 @@ body {
   background-size: cover;
   background-position: center; }
 
-.owl-theme .owl-dots {
+#home-showcase-slider .owl-theme .owl-dots {
   position: relative;
   top: -2.25rem; }
-  .owl-theme .owl-dots .owl-dot.active span {
+  #home-showcase-slider .owl-theme .owl-dots .owl-dot.active span {
     background: #fff;
     width: 28px;
     transition: all 0.5s; }
-  .owl-theme .owl-dots .owl-dot span {
+  #home-showcase-slider .owl-theme .owl-dots .owl-dot span {
     background: #5e5e5e;
     width: 25px;
     height: 3px;
@@ -125,4 +126,34 @@ body {
   margin: 15px 0; }
 
 /* ----------------------NEWSLETTER SECTION------------------------ */
+/* ---------------------- FOOTER ------------------------ */
+.nav-footer {
+  flex-direction: column; }
+  .nav-footer .nav-link {
+    padding: 0.5rem 1.5rem 0.5rem 0; }
+
+/* ===== about.html ======= */
+.page-header-wrapper {
+  position: relative;
+  background: url(../img/image1.jpg) no-repeat fixed;
+  background-size: cover;
+  background-position: center;
+  color: #fff; }
+
+.page-header-inner {
+  max-width: 70%;
+  margin: 0 auto; }
+
+/* ===== contact.html ======= */
+.member-img {
+  max-width: 180px;
+  margin: auto;
+  margin-bottom: 1rem; }
+
 /* ===== RESPONSIVE ======= */
+@media (min-width: 768px) {
+  .nav-footer {
+    flex-direction: row;
+    justify-content: flex-end; }
+    .nav-footer .nav-link {
+      padding: 0.5rem 1rem; } }
